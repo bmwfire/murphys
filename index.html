@@ -6,72 +6,103 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+          type="text/javascript"></script>
 </head>
 <body>
 
 <div class="ui borderless topmenu container menu">
-
   <div class="ui container">
+    <img class="ui image item" src="http://murphyshawaii.com/media/2014/04/murphyshawaii.png">
 
-  <img class="ui image item" src="http://murphyshawaii.com/media/2014/04/murphyshawaii.png">
-
-  <div class="right item">
-    <div class="text">Home</div>
-  </div>
-
-  <div class="ui dropdown item">
-    <div class="text">About us</div>
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <div class="item">test</div>
+    <div class="right item">
+      <div class="text">Home</div>
     </div>
-  </div>
 
-  <div class="item">
-    <div class="text">St. Patrick's Day</div>
-  </div>
-
-  <div class="ui dropdown item">
-    <div class="text">Menus</div>
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <div class="item">test</div>
+    <div class="ui dropdown item">
+      <div class="text">About us</div>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="item">test</div>
+      </div>
     </div>
-  </div>
 
-  <div class="item">
-    <div class="text">Bar</div>
-  </div>
+    <div class="item">
+      <div class="text">St. Patrick's Day</div>
+    </div>
 
-  <a class="item"><i class="search icon"></i></a>
+    <div class="ui dropdown item">
+      <div class="text">Menus</div>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="item">test</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="text">Bar</div>
+    </div>
+
+    <a class="item"><i class="search icon"></i></a>
 
   </div>
 
 </div>
 
 
-<div class="ui borderless middlemenu item">
-  <div class="ui centered two column grid container">
+<div class="middle">
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <div class="ui two column centered grid container">
+
     <div class="column">
-      <img class="ui medium image" src ="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png">
+      <img class="ui right floated medium image" src="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png">
     </div>
 
     <div class="column">
-      <div class="right middle text">A traditional downtown saloon and eatery located in the Honolulu Financial District, just one block off the waterfront, Murphy's has been a haven for mariners, businessmen and locals since 1891.</div>
+      <div class="item"><br/>A traditional downtown saloon and eatery located in the Honolulu<br/>
+        Financial District, just one block off the waterfront, Murphy's has<br/>
+        been a haven for mariners, businessmen and locals since 1891.
+      </div>
     </div>
+
   </div>
 </div>
 
-
-<div class="footer-background">
+<div class="footer">
   <div class="ui three column grid container">
+
+    <div class="column">
+      Lunch
+      <hr/>
+      <div class="ui list">
+        <div class="date item">Monday - Friday: 11:00am - 2:30pm</div>
+        <div class="date item">Saturday - Sunday: Not open for lunch</div>
+      </div>
+    </div>
+
+    <div class="column">
+      Bar
+      <hr/>
+      <div class="ui list">
+        <div class="date item">Monday - Friday from 11:00am</div>
+        <div class="date item">Saturday - Sunday from 4:00pm</div>
+      </div>
+    </div>
+
+    <div class="column">
+      Dinner
+      <hr/>
+      <div class="ui list">
+        <div class="date item">Monday - Sunday: 5:30pm - 10:00pm</div>
+        <div class="date item">Sunday: 5:00pm - 9:00pm</div>
+      </div>
+    </div>
 
   </div>
 </div>
 
 <script>
-  $('.ui.dropdown').dropdown();
+  $('.dropdown').dropdown({ transition: 'drop', on: 'hover' });
 </script>
 
 </body>
